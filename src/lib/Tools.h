@@ -10,7 +10,7 @@ namespace Tools_NS
 {
   using StrVector = std::vector<std::string>;
 
-  StrVector split(const std::string &str, char d);
+  StrVector split(const std::string &str, char d = '\n');
   
   template <typename T, std::size_t... Indices>
   auto vectorToTupleHelper(const std::vector<T>& v, std::index_sequence<Indices...>)
