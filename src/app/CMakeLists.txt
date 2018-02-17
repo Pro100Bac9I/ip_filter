@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 
-project(ip_filter)
+project(ip_filter VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 add_executable(
     ip_filter
@@ -19,14 +19,7 @@ set_target_properties(
 
 target_link_libraries(
     ip_filter
-
     ip_filter_lib
 )
 
-install(
-    TARGETS 
-
-    ip_filter
-
-    RUNTIME DESTINATION bin
-)
+install(TARGETS helloworld_cli RUNTIME DESTINATION bin)

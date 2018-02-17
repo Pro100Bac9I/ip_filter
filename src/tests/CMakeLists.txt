@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 
-project(ip_filter_test)
+project(ip_filter_test VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
@@ -34,9 +34,4 @@ target_link_libraries(
     ip_filter_lib
 )
 
-install(
-    TARGETS 
-    ip_filter_test
-
-    RUNTIME DESTINATION bin
-)
+install(TARGETS ip_filter_test RUNTIME DESTINATION bin)
