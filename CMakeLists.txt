@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 
-project(otus_homework_2 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+project(otus_homework_2 VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 configure_file(version.h.in version.h)
 
