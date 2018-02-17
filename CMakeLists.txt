@@ -18,4 +18,4 @@ include(CPack)
 
 enable_testing()
 
-add_test(ip_filter_test_cli src/tests/ip_filter_test_cli)
+add_test(ip_filter_test src/tests/ip_filter_test)

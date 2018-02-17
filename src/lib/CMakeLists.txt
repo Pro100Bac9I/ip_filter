@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.2)
 project(ip_filter_lib VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 add_library(
-    ip_filter_lib_cli
+    ip_filter_lib
 
     IPPool.h
     IPPool.cpp
@@ -13,7 +13,7 @@ add_library(
 )
 
 set_target_properties(
-    ip_filter_lib_cli
+    ip_filter_lib
 
     PROPERTIES
     CXX_STANDARD 14

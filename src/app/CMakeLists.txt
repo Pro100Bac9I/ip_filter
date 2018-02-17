@@ -3,13 +3,13 @@ cmake_minimum_required(VERSION 3.2)
 project(ip_filter VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 add_executable(
-    ip_filter_cli
+    ip_filter
 
     main.cpp
 )
 
 set_target_properties(
-    ip_filter_cli
+    ip_filter
 
     PROPERTIES
     CXX_STANDARD 14
@@ -18,8 +18,8 @@ set_target_properties(
 )
 
 target_link_libraries(
-    ip_filter_cli
-    ip_filter_lib_cli
+    ip_filter
+    ip_filter_lib
 )
 
-install(TARGETS ip_filter_cli RUNTIME DESTINATION bin)
+install(TARGETS ip_filter RUNTIME DESTINATION bin)
