@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 
-project(ip_filter_lib)
+project(ip_filter_lib VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 add_library(
     ip_filter_lib
